@@ -18,6 +18,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".DownloadImagesService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".ShowImageDetailsActivity"
+            android:label="@string/title_activity_show_image_details" >
+        </activity>
+
+        <service
+            android:name=".DownloadImageDetailsService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
     </application>
 
 </manifest>

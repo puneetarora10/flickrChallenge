@@ -5,4 +5,17 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- Style for all Headings -->
+    <style name="Heading">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">#2196f3</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="AuthorName">
+        <item name="android:textColor">#2196f3</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
 </resources>

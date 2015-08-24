@@ -3,4 +3,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <!--Activity-->
+    <string name="uploadedBy">Uploaded By</string>
+    <string name="showingDetails">Showing Details...</string>
+    <string name="title_activity_show_image_details">ShowImageDetailsActivity</string>
 </resources>
