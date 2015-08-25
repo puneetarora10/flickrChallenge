@@ -158,7 +158,9 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        // login action clicked
+        if (id == R.id.action_login) {
+            loginActionClicked();
             return true;
         }
 
@@ -225,5 +227,21 @@ public class MainActivity extends AppCompatActivity {
             }
             persistenceInProgress = false;
         }
+    }
+
+    /**
+     * TODO complete -> login using Flickr's OAuth
+     * login action clicked (PRO flavor)
+     */
+    private final static String PLEASE_GO_PRO = "Please Go PRO to see Private Photo Stream...";
+    private final static String COMING_SOON = "Coming Soon...";
+    private void loginActionClicked() {
+        String toastText = PLEASE_GO_PRO;
+        if (BuildConfig.ALLOW_LOGIN) {
+            toastText = COMING_SOON;
+        }
+        // create and show toast
+        Toast toast = Toast.makeText(getApplicationContext(), toastText, Toast.LENGTH_SHORT);
+        toast.show();
     }
 }
